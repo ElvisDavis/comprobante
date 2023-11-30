@@ -1,7 +1,6 @@
 <?php
-require_once "../modelos/TipoContribuyente";
+require_once "../modelos/TipoContribuyente.php";
 $tipocontribuyente = new TipoContribuyente();
-
 $idtipocontribuyente = isset($_POST["idtipocontribuyente"]) ? limpiarCadena($_POST["idtipocontribuyente"]) : "";
 $nombre = isset($_POST["nombre"]) ? limpiarCadena($_POST["nombre"]) : "";
 
@@ -10,7 +9,7 @@ switch ($_GET["op"]) {
         # code...
         if (empty($idtipocontribuyente)) {
             $rspta = $tipocontribuyente->insertar($nombre);
-            echo $rspta ? "Tipo Contribuyente ingresado con exito " : "Tipo contribuyente no se pudo registras";
+            echo $rspta ? "Tipo Contribuyente ingresado con exito " : "Tipo contribuyente no se pudo registrar";
 
         } else {
             $rspta = $tipocontribuyente->editar($idtipocontribuyente, $nombre);

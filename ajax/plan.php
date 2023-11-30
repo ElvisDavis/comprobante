@@ -63,14 +63,7 @@ switch ($_GET["op"]) {
         echo json_encode($results);
 
         break;
-
-
-
-
-
-    default:
-        # code...
-        break;
+    
 }
 
 
