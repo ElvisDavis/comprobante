@@ -10,16 +10,16 @@ class Plan
     }
 
     //Implementamos un método para insertar lso registros 
-    public function insertar ($nombre, $tipocontribuyente,$costo)
+    public function insertar ($idtipocontribuyente,$nombre,$costo)
     {
-        $sql="INSERT INTO plan (nombre, tipocontribuyente, costo, estado)
-        VALUES('$nombre','$tipocontribuyente', '$costo','1')";
+        $sql="INSERT INTO plan (idtipocontribuyente,nombre, costo, estado)
+        VALUES('$idtipocontribuyente','$nombre', '$costo','1')";
         return ejecutarConsulta($sql);
     }
     //Implementamos un mpetodo para editar el contribuyente
-    public function editar($idplan, $nombre,$tipocontribuyente,$costo)
+    public function editar($idplan, $idtipocontribuyente, $nombre,$costo)
     {
-        $sql="UPDATE plan SET nombre='$nombre', tipocontribuyente='$tipocontribuyente',costo='$costo' WHERE idplan='$idplan' ";
+        $sql="UPDATE plan SET idtipocontribuyente='$idtipocontribuyente', nombre='$nombre',costo='$costo' WHERE idplan='$idplan' ";
         return ejecutarConsulta($sql);
     }
 

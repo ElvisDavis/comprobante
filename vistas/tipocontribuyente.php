@@ -37,7 +37,7 @@ require 'header.php';
             <form name="formulario" id="formulario" method="POST">
               <div class="form-group col-lg-8 col-md-8 col-sm-8 col-xs-12">
                 <label>Nombre(*):</label>
-                <input type="text" name="idtipocontribuyente" id="idtipocontribuyente">
+                <input type="hidden" name="idtipocontribuyente" id="idtipocontribuyente">
                 <input type="text" class="form-control" name="nombre" id="nombre" maxlength="20"
                   placeholder="Ingrese el tipo de contribuyente" required onblur="may(this.value, this.id)">
 

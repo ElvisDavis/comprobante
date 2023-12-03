@@ -10,11 +10,11 @@ switch ($_GET["op"]) {
     case 'guardaryeditar':
         # code...
         if (empty($idplan)) {
-            $rspta = $plan->insertar($nombre, $tipocontribuyente, $costo);
+            $rspta = $plan->insertar($idtipocontribuyente, $nombre, $costo);
             echo $rspta ? "Plan ingresado correctamente" : "El plan no se pudo ingresar correctamente";
 
         } else {
-            $rspta = $plan->editar($idplan, $nombre, $tipocontribuyente, $costo);
+            $rspta = $plan->editar($idplan, $idtipocontribuyente, $nombre,  $costo);
             echo $rspta ? "Plan editado correctamente" : "El Plan no se pudo editar correctamente";
         }
         break;

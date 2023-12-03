@@ -102,9 +102,9 @@
                             <i class="fa fa-angle-left pull-right"></i>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="curso.php"><i class="fa fa-circle-o"></i>Tipo Contribuyente</a></li>
-                            <li><a href="paralelo.php"><i class="fa fa-circle-o"></i>Planes</a></li>
-                            <li><a href="seccion.php"><i class="fa fa-circle-o"></i></a></li>
+                            <li><a href="tipocontribuyente.php"><i class="fa fa-circle-o"></i>Tipo Contribuyente</a></li>
+                            <li><a href="plan.php"><i class="fa fa-circle-o"></i>Planes</a></li>
+                            <li><a href="usuarios.php"><i class="fa fa-circle-o"></i>Usuarios</a></li>
                         </ul>
                     </li>
 

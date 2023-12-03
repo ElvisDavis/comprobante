@@ -13,6 +13,7 @@ switch ($_GET["op"]) {
 
         } else {
             $rspta = $tipocontribuyente->editar($idtipocontribuyente, $nombre);
+            echo $rspta ? "Tipo de contribuyente editado con exito " : "Tipo de contribuyente no se pudo editar";
 
         }
         break;
